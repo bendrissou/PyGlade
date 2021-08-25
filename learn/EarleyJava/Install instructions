@@ -1,0 +1,8 @@
+sudo apt install maven
+
+Install JDK 11: 
+https://linuxhint.com/install_oracle_jdk11_ubuntu/
+https://www.infoworld.com/article/3514725/installing-oracle-java-se-11-on-ubuntu-18-04.html
+
+make all
+make javaparser

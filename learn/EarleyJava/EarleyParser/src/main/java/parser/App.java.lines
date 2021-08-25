@@ -1,0 +1,48 @@
+package parser;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
+
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
+/**
+ * Earley Parser
+ *
+ */
+public class App {
+    public static void main(String[] args) {
+        ParserLib pl;
+        try {
+            long startTime = System.currentTimeMillis();
+            String program = args[0];
+            String grammar = "../synthesized/" + program + ".json";
+            pl = new ParserLib(grammar);
+            //ParseTree result = pl.parse_text(args[1], pl.start_symbol);
+            System.out.println("Grammar read");
+            String samples_path = "../samples/handwritten/" + program + "_inputs.txt";
+            List<String> allLines = Files.readAllLines(Paths.get(samples_path));
+            for (String line : allLines) {
+                ScriptEngineManager manager = new ScriptEngineManager();
+                ScriptEngine engine = manager.getEngineByName("js");
+                Object result = engine.eval("4*5");
+                System.out.println(line);
+            }
+
+            pl.parse_text(args[1], pl.start_symbol);
+            long estimatedTime = System.currentTimeMillis() - startTime;
+            //System.out.println(pl.get_json(result).toString(4));
+            System.out.println("Valid input");
+            //System.out.println("Elapsed time: " + estimatedTime);
+        } catch (ParseException e) {
+            System.out.println("SyntaxError: " + e);
+            //e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ScriptException e) {
+            e.printStackTrace();
+        }
+    }
+}

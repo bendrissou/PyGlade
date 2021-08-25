@@ -1,0 +1,28 @@
+package parser;
+
+import java.io.IOException;
+
+/**
+ * Earley Parser
+ *
+ */
+public class App {
+    public static void main(String[] args) {
+        ParserLib pl;
+        try {
+            long startTime = System.currentTimeMillis();
+            pl = new ParserLib(args[0]);
+            //ParseTree result = pl.parse_text(args[1], pl.start_symbol);
+            pl.parse_text(args[1], pl.start_symbol);
+            long estimatedTime = System.currentTimeMillis() - startTime;
+            //System.out.println(pl.get_json(result).toString(4));
+            System.out.println("Valid input");
+            //System.out.println("Elapsed time: " + estimatedTime);
+        } catch (ParseException e) {
+            System.out.println("SyntaxError: " + e);
+            //e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
