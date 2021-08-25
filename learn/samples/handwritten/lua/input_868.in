@@ -1,0 +1,1 @@
+for S = nil , ... , - "" do return 0xa3 ; end :: E5 :: 

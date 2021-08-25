@@ -1,0 +1,1 @@
+BEGIN c := Z + - 2 WRITE CG + S , 28 READ H , g END 

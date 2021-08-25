@@ -1,0 +1,1 @@
+DELETE IGNORE FROM ത曓 .厎㌓蜨╽䅠 , DATETIME .㈶㢃 . * , HOUR . `CP1257` , `/9` USING ( ( `9` . `#C` PARTITION ( `1=` , `G2` ) `w` ) , ( `1#` PARTITION ( `W` , `PeT` , `$` , `M` ) AS `R` ) ) , ( ( SELECT * LIMIT 0 OFFSET 8 ) UNION DISTINCT ( SELECT SQL_BIG_RESULT * ) FOR UPDATE `E` ) -- 

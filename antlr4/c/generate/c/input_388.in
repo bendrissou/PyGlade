@@ -1,0 +1,1 @@
+__builtin_va_arg(--_Alignof(volatilerestrict^restrict*volatile),__extension__(__m128))

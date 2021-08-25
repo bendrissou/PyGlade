@@ -1,0 +1,1 @@
+BEGIN READ P , g WRITE 6 + 72 + - 6 END 

@@ -1,0 +1,1 @@
+/ | / | / | "?" // ancestor :: text ( ) | / .. | / | '1A' // .. div - - - - / | / descendant :: processing-instruction ( "" ) / @ * // text ( ) - / | preceding-sibling :: processing-instruction ( '' ) / .. // following-sibling :: node ( ) * - - $ 등̐6 : preceding-sibling | / | / | / . / .. // . | "" | '' - / 

@@ -1,0 +1,1 @@
+; CHANGE REPLICATION FILTER REPLICATE_WILD_IGNORE_TABLE = ( """\@" , '_\|''' , '\z''\c''\`' , `` , '' , `` , `` ) , REPLICATE_DO_TABLE = ( `MACCE` , TIME .䉰子曩霅⪑ , DATE . `SJIS` , `d(` , ` ` , PROCESS , WEEK .쪈봾לּ ) -- 

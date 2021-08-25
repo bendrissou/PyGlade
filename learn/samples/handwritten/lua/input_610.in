@@ -1,0 +1,1 @@
+:: VC :: while ( .320 ) : so8 '\031' do return end local f = ... + ( nil + true ) [ "" ^ function ( ... ) end ] .. ... - 47 return ; 

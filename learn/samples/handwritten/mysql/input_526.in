@@ -1,0 +1,1 @@
+GET CURRENT DIAGNOSTICS @'' = NUMBER , @"""" = ROW_COUNT , @@`` = ROW_COUNT 

@@ -1,0 +1,1 @@
+PREPARE `HP8` FROM @'' ; DEALLOCATE PREPARE `EUCKR` -- ; ; -- 

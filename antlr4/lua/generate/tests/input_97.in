@@ -1,0 +1,1 @@
+for vm in [[9e]] do end for q in ... % ... + false ^ { } % ... == true and true - true and ... == true % true or ... ^ ... .. nil ~= nil ~ false == nil .. ... + nil & false % true .. ... ^ ... or not 0X4CD and false >> true or { false .. true .. { } .. { } / { } and true and function ( ) end << ... , } ^ "" > false do end return 

@@ -1,0 +1,2 @@
+__builtin_offsetof(__extension__(__m128)restrict***restrict[conststatic71]__asm("8\
+"L""),++__builtin_va_arg(&&d5,int_Atomic))

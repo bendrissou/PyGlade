@@ -1,0 +1,1 @@
+$ preceding [ / != / < / != / + / != / + / > / - / or / - / + / + / + / - / != / - / != / = / >= / - / - / + / > / != / and / < / ] // .. | // .. / . / .. // @ node ( ) + / = / | / . != - . | // preceding-sibling :: processing-instruction ( "" ) / preceding :: comment ( ) / .. // .. / .. // . div / div / 

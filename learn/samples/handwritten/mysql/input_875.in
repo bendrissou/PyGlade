@@ -1,0 +1,1 @@
+REVOKE FLUSH_STATUS ON `-*` . * FROM '' -- 

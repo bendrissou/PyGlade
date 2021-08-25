@@ -1,0 +1,1 @@
+local function J ( ) ; goto F0 return end 

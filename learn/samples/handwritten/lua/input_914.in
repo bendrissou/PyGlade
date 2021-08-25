@@ -1,0 +1,1 @@
+goto b if nil then elseif [[X]] ~ "" .. true then end return true ; 

@@ -1,0 +1,1 @@
+__builtin_va_arg(_Alignof(__m128d),restrictvolatile_AtomicTvolatilerestrict)

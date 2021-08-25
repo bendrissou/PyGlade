@@ -1,0 +1,1 @@
+prOgRAm x ; bEGin IF + nOT Not (. .) ANd faLSE Or [ ] Mod (. .) / + not [ ] aNd - (. .) > + trUE thEn gotO 1 enD . 

@@ -1,0 +1,1 @@
+__extension__({while(--sizeof(volatile)-=7)gotosizeof(restrict_Atomicvolatile);})

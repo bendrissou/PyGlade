@@ -1,0 +1,1 @@
+ALTER SERVER `[` OPTIONS ( DATABASE 'y' , SOCKET `` , HOST '' , DATABASE 'A' ) -- ; ; ; 

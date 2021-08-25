@@ -1,0 +1,1 @@
+/ div / mod / div / mod - / | .17 + / | . > child :: processing-instruction ( "RQ#" ) | / | / | / | '' | .. // . // . // .. | '' + - / | / | / processing-instruction ( "." ) | / | self ( ) * ancestor-or-self :: following-sibling / .. <= - - - - - / | .. + / + .. div / and / | / | / | $ ancestor-or-self or / - / | / | / | $ node : text // ancestor-or-self :: node : * 

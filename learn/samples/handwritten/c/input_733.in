@@ -1,0 +1,1 @@
+__builtin_va_arg(sizeof(volatilerestrict_Atomic),restrictrestrict_Atomic(_Atomic))

@@ -1,0 +1,1 @@
+__builtin_offsetof(const(*)__asm(u"")__asm(L"")[_Atomic],&90)

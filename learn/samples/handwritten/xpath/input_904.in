@@ -1,0 +1,1 @@
+/ - / div - - / | . / .. | following ( ) | "" // parent :: processing-instruction ( 'P' ) | "" - / > / > / div / | / | / | 35. - / mod .. / attribute :: text : following-sibling // attribute :: processing-instruction ( "\Bsx" ) != / mod / div / mod - / | descendant :: * / * / .. + / mod / and / + / >= - / | / | 5. // @ * | / | .. / preceding :: * * / + / 

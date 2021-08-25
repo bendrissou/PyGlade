@@ -1,8 +1,29 @@
-This is an implementation of the _Glade_ blackbox grammar miner described by
+
+This is the replication package of PyGlade experiments.
+PyGlade is a Python impelementation of the _Glade_ blackbox grammar synthesis algorithm described by
 Bastani et al. in [Synthesizing Program Input
 Grammars](https://arxiv.org/pdf/1608.01723.pdf)
 
-To use, modify the `src/check.py` file which contains the oracle. Controlling
-the number of attempts to verify is done in `src/config.py`
+For general use of PyGlade, refer to [source project](https://github.com/BachirCoder/PyGlade)
 
-Seed inputs are placed in the `inputs` file.
+In this experiment, we learn 25 target languages. Target languages are modeled by source grammars. Most grammars are in fuzzingbook format. Others are in ANTLR format.
+
+## Requirements:
+* CPU of 8 cores minimum.
+* python3
+* antlr4-python3-runtime version 4.9.2, can be installed by `pip3 install antlr4-python3-runtime==4.9.2`
+
+## Learning
+To run the learning tasks, run commands:
+    make learn
+    make learn-antlr
+
+## Evaluation
+To run the evaluation, execute command:
+    make eval
+
+Source grammars can be found in `learn/handwritten`
+ANTLR source grammars can be found in `antlr4/*/` where * can be relpaced by the target language name.
+Synthesized grammars can be found in `learn/synthesized`
+The files containing evaluation results are: `learn/results/eval_*.txt`
+The files containing execution statistics are: `learn/results/info_*.txt`

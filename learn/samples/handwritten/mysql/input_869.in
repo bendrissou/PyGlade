@@ -1,0 +1,1 @@
+EXECUTE REPEATABLE USING @'' -- ; ; CHECK TABLE `Vt` -- ; -- 

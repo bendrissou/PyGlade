@@ -1,0 +1,1 @@
+local function F ( ) repeat until { } return true or ~ nil and nil , 0X33C , ... end 

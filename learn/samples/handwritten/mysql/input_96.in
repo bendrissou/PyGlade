@@ -1,0 +1,1 @@
+EXECUTE `j` USING @'' , @`\+` -- KILL QUERY 5 -- PURGE MASTER LOGS TO '''\:\l\}' ; HELP """2\8" ; 

@@ -1,0 +1,1 @@
+local Ptb < u > , y < Ld > local function x ( ... ) return not { w = function ( ) while nil do end break repeat until nil ; return ; end ^ ... ^ true ^ false + false * - false // { } < false and true ; [[2A]] ; } end 

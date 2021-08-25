@@ -1,0 +1,9 @@
+__builtin_offsetof(_Atomicvolatile^const(kQtx[_Atomic]__asm("\
+j\
+""\
+\
+""\
+"U"j\x8\x9D\
+"))__asm(u8""u8"\55\u02F4\
+\
+")__attribute__((&))[_Atomicvolatilestatic4]__attribute__((%)),--sizeof(volatilerestrict__extension__(__m128)))

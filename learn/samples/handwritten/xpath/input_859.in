@@ -1,0 +1,1 @@
+- / ancestor-or-self :: text ( ) = - - - 00 | / | / | / | // . mod - / | / . >= / | / | / | following-sibling ( ) | .. | / | "D" > / | / | $ comment // . // processing-instruction ( "" ) / . | / | / | / | ":" * / mod / | / | .. / . // . * / 

@@ -1,0 +1,26 @@
+import sys, imp
+import subprocess
+import os
+import json
+exec_map = {}
+def check(s, label=None):
+    if s in exec_map: return exec_map[s]
+    v =  _check(s)
+    #print("\t\t", repr(s), v, ' from: %s' % str(label))
+    exec_map[s] = v
+    return v
+
+# This is the oracle. For now, we simply use a regex matcher
+# but you can replace it with any context free oracle. Return
+# True if your oracle agrees with the input.
+import re
+def _check(s):
+	try:
+		json.loads(s)
+		print("Valid input. \n")
+		return True
+
+	except Exception as e:
+		print("Invalid input. \n")
+		print("Error: "+str(e))
+		return False

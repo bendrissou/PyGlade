@@ -1,0 +1,68 @@
+
+python3 setup.py install
+
+
+Generate samples:
+
+grammarinator-process ../tiny.g4 --no-actions
+
+grammarinator-process ../JavaLexer.g4 ../JavaParser.g4 --no-actions
+grammarinator-process ../XPath31.g4 --encoding ascii --no-actions
+grammarinator-process ../SQLiteLexer.g4 ../SQLiteParser.g4 --encoding ascii --no-actions
+
+
+grammarinator-generate -p ExprUnparser.py -l ExprUnlexer.py -r expr -d 10 -o tests/test_%d.ex -n 5
+
+grammarinator-generate jvmBasicGenerator.jvmBasicGenerator -r prog -d 20 -o random/test_%d.ex -n 80 --sys-path . -s grammarinator.runtime.simple_space_serializer
+
+grammarinator-generate tinycGenerator.tinycGenerator -r program -d 20 -o random/test_%d.ex -n 90 --sys-path . -s grammarinator.runtime.simple_space_serializer
+
+grammarinator-generate xpathGenerator.xpathGenerator -r main -d 20 -o tests/test_%d.ex -n 15 --sys-path . -s grammarinator.runtime.simple_space_serializer
+
+grammarinator-generate CGenerator.CGenerator -r primaryExpression -d 20 -o random/test_%d.ex -n 90 --sys-path .
+
+Link: https://github.com/renatahodovan/grammarinator
+
+Parse:
+
+Link: https://tomassetti.me/antlr-mega-tutorial/
+
+export CLASSPATH=".:/usr/local/lib/antlr-4.9.2-complete.jar:$CLASSPATH"
+alias antlr4='java -Xmx500M -cp "/usr/local/lib/antlr-4.9.2-complete.jar:$CLASSPATH" org.antlr.v4.Tool'
+
+antlr4 -Dlanguage=Python3 tiny.g4
+
+python3 parse.py input.txt
+
+Warning:
+ANTLR runtime and generated code versions disagree: 4.7.1!=4.9.2
+Solution:
+pip3 uninstall antlr4-python3-runtime
+pip3 install antlr4-python3-runtime==4.9.2
+
+------------------
+
+Elapsed time: 1216.8864979743958
+
+    atomized_reg = atomize(curr_reg)
+    final_reg = char_gen_phase(atomized_reg)
+    compact_reg = compact(final_reg)
+    return compact_reg
+--------------------
+
+ANTLR4 with Java:
+
+java -cp /usr/local/lib/antlr-4.9.2-complete.jar org.antlr.v4.Tool xpath.g4
+
+javac -classpath /usr/local/lib/antlr-4.9.2-complete.jar *.java
+
+java -cp .:/usr/local/lib/antlr-4.9.2-complete.jar Main
+--------------------
+antlr4 Corundum.g4
+
+
+java -cp /usr/local/lib/antlr-4.9.2-complete.jar org.antlr.v4.Tool ../MySqlLexer.g4
+
+
+javac -classpath /usr/local/lib/antlr-4.9.2-complete.jar parse.java
+

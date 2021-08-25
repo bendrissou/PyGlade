@@ -1,0 +1,1 @@
+BEGIN READ d WRITE - 5 - - 3610 WRITE DIh + h - 6 END 

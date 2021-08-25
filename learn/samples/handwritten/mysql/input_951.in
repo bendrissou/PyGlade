@@ -1,0 +1,1 @@
+CREATE SPATIAL INDEX `LATIN7` ON GB2312 . `PP` ( '"''''''''' ( 2 ) , `2l` ) ; -- 

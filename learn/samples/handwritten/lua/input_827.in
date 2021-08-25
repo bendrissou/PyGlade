@@ -1,0 +1,1 @@
+local C return function ( ... ) end or false 

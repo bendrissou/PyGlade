@@ -1,0 +1,1 @@
+do if 3 or false // [[]] or false // { } / 0X474 then return ; else return end end 
