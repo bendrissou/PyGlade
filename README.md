@@ -15,15 +15,24 @@ In this experiment, we learn 25 target languages. Target languages are modeled b
 
 ## Learning
 To run the learning tasks, run commands:
+
     make learn
+
     make learn-antlr
 
 ## Evaluation
 To run the evaluation, execute command:
+
     make eval
 
 Source grammars can be found in `learn/handwritten`
+
 ANTLR source grammars can be found in `antlr4/*/` where * can be relpaced by the target language name.
-Synthesized grammars can be found in `learn/synthesized`
-The files containing evaluation results are: `learn/results/eval_*.txt`
-The files containing execution statistics are: `learn/results/info_*.txt`
+
+Synthesized grammars can be found in `learn/synthesized`.
+
+The files containing evaluation results are: `learn/results/eval_*.txt`.
+
+The files containing execution statistics are: `learn/results/info_*.txt`.
+
+
