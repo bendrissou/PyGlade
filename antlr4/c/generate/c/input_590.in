@@ -1,1 +1,0 @@
-__builtin_va_arg(sizeof(__extension__(__m128d)),volatile)

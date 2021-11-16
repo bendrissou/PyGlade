@@ -1,1 +1,0 @@
-(sizeofsizeof(vshort)%=sizeof(__m128irestrict)|=723)

@@ -1,1 +1,0 @@
-CHECK TABLE `TIS620`         -- 

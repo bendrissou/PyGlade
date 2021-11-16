@@ -1,1 +1,0 @@
-PRoGRAm h ; begIN 595 : IF [ ] - + @ Y . s5_ ^ . j ^ Or + Chr ( 11 ) MoD not (. .) / (. .) > + 2 / faLsE - 393 AND + @ Y_1 * + (. .) Or - Not [ ] ANd + (. .) Then WIth @ h7 ^ ^ , @ s . Q DO GoTo 1 enD . 

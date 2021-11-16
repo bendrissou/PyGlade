@@ -1,1 +1,0 @@
-;while(y=tr=lg=y+97+x-5-68+(w)-(zm=sjzl<4)+(msc=n-o<u+9)-vyenrrl)bto=(s=i-36<d)-805;

@@ -1,1 +1,0 @@
-BEGIN A := 0 - - 4 WRITE - 3 , Jsq , - 0 READ A END 

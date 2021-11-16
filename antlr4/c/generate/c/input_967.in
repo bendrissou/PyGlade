@@ -1,1 +1,0 @@
-__builtin_va_arg(sizeof(_Atomic),long**const)
