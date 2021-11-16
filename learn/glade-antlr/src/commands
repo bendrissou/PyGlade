@@ -1,6 +1,0 @@
-
-cd /home/vagrant/thesis/learn/glade-py/src
-python3 ./glade.py paren
-
-cd /home/vagrant/thesis
-python3 ./eval.py paren

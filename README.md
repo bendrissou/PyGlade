@@ -11,6 +11,7 @@ In this experiment, we learn 25 target languages. Target languages are modeled b
 ## Requirements:
 * CPU of 8 cores minimum.
 * python3
+* pip3
 * antlr4-python3-runtime version 4.9.2, can be installed by `pip3 install antlr4-python3-runtime==4.9.2`
 
 ## Learning
