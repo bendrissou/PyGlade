@@ -16,16 +16,14 @@ learn:
 	cd learn/glade-py/src && python3 glade.py paren1a
 	cd learn/glade-py/src && python3 glade.py paren2a
 	cd learn/glade-py/src && python3 glade.py paren3a
-
-learn-antlr:
-	cd learn/glade-antlr/src && python3 glade.py lua
-	cd learn/glade-antlr/src && python3 glade.py pascal
-	cd learn/glade-antlr/src && python3 glade.py mysql
-	cd learn/glade-antlr/src && python3 glade.py xpath
-	cd learn/glade-antlr/src && python3 glade.py c
-	cd learn/glade-antlr/src && python3 glade.py tinyc
-	cd learn/glade-antlr/src && python3 glade.py tiny
-	cd learn/glade-antlr/src && python3 glade.py basic
+	cd learn/glade-py/src && python3 glade.py lua
+	cd learn/glade-py/src && python3 glade.py pascal
+	cd learn/glade-py/src && python3 glade.py mysql
+	cd learn/glade-py/src && python3 glade.py xpath
+	cd learn/glade-py/src && python3 glade.py c
+	cd learn/glade-py/src && python3 glade.py tinyc
+	cd learn/glade-py/src && python3 glade.py tiny
+	cd learn/glade-py/src && python3 glade.py basic
 
 earleyjava:
 	cd learn/EarleyJava && make compile

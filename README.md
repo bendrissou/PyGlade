@@ -19,7 +19,6 @@ To run the learning tasks, run commands:
 
     make learn
 
-    make learn-antlr
 
 ## Evaluation
 To run the evaluation, execute command:

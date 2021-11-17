@@ -778,22 +778,38 @@ def phase_3(cfg, start):
             continue
     return cfg
 
+# to repetition subexpressions
+def read_seeds(program):
+    inputs = []
+    seeds_length = 0
+    antlr_programs = ['xpath', 'lua', 'pascal', 'mysql', 'c', 'tinyc', 'tiny', 'basic']
+
+    if program in antlr_programs:
+        path = '../../../antlr4/' + program + '/generate/tests/*.in'   
+        files = glob.glob(path)   
+        for name in files:
+            fin = open(name, "rt")
+            string = fin.read()
+            seeds_length = seeds_length + len(string)
+            inputs.append(string)
+
+    else:
+        file1 = open('../../seeds/%s_inputs.txt' % program, 'r')
+        Lines = file1.readlines()
+        file1.close()
+        for input in Lines:
+            string = eval(input.strip())
+            seeds_length = seeds_length + len(string)
+            inputs.append(string)
+
+    return inputs, seeds_length
+
 def main(program):
     start_time = time.time()
     global checks
-    inputs = []
     regexes = []
-    seeds_length = 0
-    # phase 1
 
-    # We read inputs from a file.
-    file1 = open('../../seeds/%s_inputs.txt' % program, 'r')
-    Lines = file1.readlines()
-    file1.close()
-    for input in Lines:
-        string = eval(input.strip())
-        seeds_length = seeds_length + len(string)
-        inputs.append(string)
+    inputs, seeds_length = read_seeds(program)
 
     if len(inputs) == 0:
         print("inputs file is empty! Please provide inputs.")
@@ -831,7 +847,5 @@ def main(program):
     file2.close()
 
 if __name__ == '__main__':
-    # we assume check is modified to include the
-    # necessary oracle
     program = sys.argv[1]
     main(sys.argv[1])

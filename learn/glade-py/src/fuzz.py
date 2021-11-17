@@ -140,7 +140,7 @@ class LimitFuzzer(Fuzzer):
     def gen_rule(self, rule, depth, max_depth):
         return ''.join(self.gen_key(token, depth, max_depth) for token in rule)
 
-    def fuzz(self, key='<start>', max_depth=20):
+    def fuzz(self, key='<start>', max_depth=100):
         return self.gen_key(key=key, depth=0, max_depth=max_depth)
 
     def __init__(self, grammar):
@@ -165,7 +165,7 @@ import json
 import check
 def main(fn):
     open('../../seeds/%s_inputs.txt' % fn, 'w').close()   # erase file content
-    with open("../../synthesized/" + fn + ".json") as f: # synthesized handwritten
+    with open("../../handwritten/" + fn + ".json") as f: # synthesized handwritten
         mgrammar = json.load(fp=f)
     fuzzer = LimitFuzzer(mgrammar)
     correct = 0
