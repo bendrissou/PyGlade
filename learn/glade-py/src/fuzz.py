@@ -178,15 +178,12 @@ def main(fn):
         if i == total: break
 
         val = fuzzer.fuzz(mgrammar['<start>'][0][0])
-        #print('hi')
         if len(val) > 200 or len(val) == 0: continue
-        print("val: "+ val)
 
-        i += 1
-        #print(str(i))
         if val in seen: continue
         seen.add(val)
-
+        print("val: "+ val)
+        i += 1
         b.write(repr(val) + "\n")
 
         v = check.check(val, fn)

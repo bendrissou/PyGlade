@@ -778,7 +778,7 @@ def phase_3(cfg, start):
             continue
     return cfg
 
-# to repetition subexpressions
+import glob
 def read_seeds(program):
     inputs = []
     seeds_length = 0
