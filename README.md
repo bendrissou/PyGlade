@@ -4,7 +4,8 @@ PyGlade is a Python implementation of the _Glade_ blackbox grammar synthesis alg
 Bastani et al. in [Synthesizing Program Input
 Grammars](https://arxiv.org/pdf/1608.01723.pdf)
 
-The _Glade_ algorithm is implemented in [glade.py](https://github.com/bendrissou/PyGlade/blob/experiments/learn/glade-py/src/glade.py)
+The main source file where _Glade_ algorithm is implemented is [glade.py](https://github.com/bendrissou/PyGlade/blob/experiments/learn/glade-py/src/glade.py)
+You can also reproduce the experiments by running our [virtual machine](https://figshare.com/s/136eea0d984136abc300)
 
 In this experiment, we learn 25 target languages. Target languages are modeled by source grammars. Most grammars are in the fuzzingbook format. The rest are in ANTLR format.
 
