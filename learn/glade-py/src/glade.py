@@ -4,7 +4,7 @@ import itertools
 import json
 import random
 import sys
-
+import time
 import check
 import config
 import fuzz
@@ -601,8 +601,8 @@ def extract_seq(regex, prefix):
         g.update(g_)
         rule.append(k)
     prefix = make_uniq(prefix)
-    g[to_key(prefix)] = [rule]
-    return g, to_key(prefix)
+    g[to_key(prefix, '_seq')] = [rule]
+    return g, to_key(prefix, '_seq')
 
 def extract_alts(regex, prefix):
     # a1, a2
@@ -774,6 +774,8 @@ def read_seeds(program):
     return inputs, seeds_length
 
 def main(program):
+    global PROGRAM
+    PROGRAM = program
     start_time = time.time()
     regexes = []
 
@@ -815,7 +817,5 @@ def main(program):
     file2.close()
 
 if __name__ == '__main__':
-    global PROGRAM
     program = sys.argv[1]
-    PROGRAM = program
     main(program)
