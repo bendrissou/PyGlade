@@ -1,8 +1,5 @@
-import sys, imp
-import subprocess
-import os
 import sys
-import xml.etree.ElementTree as ET
+import subprocess
 
 sys.path.append("../..")
 
@@ -20,7 +17,6 @@ def check(s, p, label=None):
     exec_map[s] = v
     return v
 
-import re
 def _check(s, p):
 	try:
 		parser.check(s, p)

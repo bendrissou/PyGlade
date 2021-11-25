@@ -169,7 +169,7 @@ def main(fn):
         mgrammar = json.load(fp=f)
     fuzzer = LimitFuzzer(mgrammar)
     correct = 0
-    total = 50
+    total = config.FUZZ_SEEDS
     b = open('../../seeds/%s_inputs.txt' % fn, "w")
     #for i in range(total):
     seen = set()
