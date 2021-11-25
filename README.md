@@ -1,12 +1,12 @@
 
 This is the replication package of PyGlade experiments.
-PyGlade is a Python impelementation of the _Glade_ blackbox grammar synthesis algorithm described by
+PyGlade is a Python implementation of the _Glade_ blackbox grammar synthesis algorithm described by
 Bastani et al. in [Synthesizing Program Input
 Grammars](https://arxiv.org/pdf/1608.01723.pdf)
 
-For general use of PyGlade, refer to [source project](https://github.com/BachirCoder/PyGlade)
+The _Glade_ algorithm is implemented in [glade.py](https://github.com/bendrissou/PyGlade/blob/experiments/learn/glade-py/src/glade.py)
 
-In this experiment, we learn 25 target languages. Target languages are modeled by source grammars. Most grammars are in fuzzingbook format. Others are in ANTLR format.
+In this experiment, we learn 25 target languages. Target languages are modeled by source grammars. Most grammars are in the fuzzingbook format. The rest are in ANTLR format.
 
 ## Requirements:
 * CPU of 8 cores minimum.
@@ -18,7 +18,6 @@ In this experiment, we learn 25 target languages. Target languages are modeled b
 To run the learning tasks, run commands:
 
     make learn
-
 
 ## Evaluation
 To run the evaluation, execute command:
